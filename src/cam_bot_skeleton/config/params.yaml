@@ -1,0 +1,3 @@
+skeleton_node:
+  ros__parameters:
+    message: "Hello from cam_bot_skeleton."
