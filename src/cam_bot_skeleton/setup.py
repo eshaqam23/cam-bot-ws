@@ -9,8 +9,8 @@ setup(
     data_files=[
         ("share/ament_index/resource_index/packages", [f"resource/{package_name}"]),
         (f"share/{package_name}", ["package.xml"]),
-        (f"share/{package_name}/launch", ["launch/skeleton.launch.py"]),
-        (f"share/{package_name}/config", ["config/params.yaml"]),
+        (f"share/{package_name}/launch", ["launch/skeleton.launch.py", "launch/color_detector.launch.py"]),
+        (f"share/{package_name}/config", ["config/params.yaml", "config/color_detector.yaml"]),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
@@ -22,6 +22,7 @@ setup(
     entry_points={
         "console_scripts": [
             "skeleton_node = cam_bot_skeleton.skeleton_node:main",
+            "color_detector = cam_bot_skeleton.color_detector_node:main",
         ],
     },
 )
