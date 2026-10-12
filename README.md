@@ -1,14 +1,16 @@
-# Cam-Bot Workspace
+# cam-bot-ws
 
-This repository contains the code for the HIVE RC Car Cam-Bot project.
+Minimal ROS 2 workspace skeleton for the cam bot.
 
-## Project Components
+## Build
 
-- Camera acquisition and data collection
-- Computer vision and object detection
-- Raspberry Pi and Arduino communication
-- RC car movement and control
+```bash
+colcon build --symlink-install
+source install/setup.bash
+```
 
-## Current Milestone
+## Run
 
-October 16, 2026: Interfaces and data pipeline.
+```bash
+ros2 launch cam_bot_skeleton skeleton.launch.py
+```
