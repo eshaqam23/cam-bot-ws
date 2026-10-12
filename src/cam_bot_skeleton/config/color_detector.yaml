@@ -1,0 +1,16 @@
+color_detector:
+  ros__parameters:
+    image_topic: "/camera/image_raw"
+    observations_topic: "/cam_bot/observations"
+    min_area: 500.0
+    blur_kernel: 5
+    # OpenCV HSV: hue 0-179, saturation/value 0-255.
+    # Tune these values for the actual camera and lighting.
+    red_lower_1: [0, 100, 70]
+    red_upper_1: [10, 255, 255]
+    red_lower_2: [170, 100, 70]
+    red_upper_2: [179, 255, 255]
+    green_lower: [35, 70, 50]
+    green_upper: [85, 255, 255]
+    blue_lower: [90, 70, 50]
+    blue_upper: [135, 255, 255]
