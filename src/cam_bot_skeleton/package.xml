@@ -1,9 +1,10 @@
+
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>cam_bot_skeleton</name>
   <version>0.0.0</version>
-  <description>Minimal Python skeleton package for the cam bot workspace.</description>
+  <description>ROS 2 package for the Cam-Bot workspace.</description>
   <maintainer email="user@example.com">TODO</maintainer>
   <license>TODO</license>
 
@@ -13,8 +14,10 @@
   <depend>launch</depend>
   <depend>launch_ros</depend>
   <depend>rclpy</depend>
+  <depend>std_msgs</depend>
 
   <exec_depend>ros2launch</exec_depend>
+  <exec_depend>python3-serial</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

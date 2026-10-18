@@ -1,0 +1,8 @@
+cam_bot_control:
+  ros__parameters:
+    use_hardware: false  # TODO: Enable only after controller watchdog and wiring checks
+    port: "/dev/rfcomm0"  # TODO: Confirm the Bluetooth serial port on the robot computer
+    baud_rate: 9600      # TODO: Match the firmware and Bluetooth link settings
+    motor_pwm: 70        # TODO: Calibrate with wheels lifted; not a certified safe speed
+    command_expiry_sec: 0.35
+    refresh_sec: 0.10
