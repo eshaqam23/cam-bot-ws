@@ -6,3 +6,6 @@ cam_bot_control:
     motor_pwm: 70        # TODO: Calibrate with wheels lifted; not a certified safe speed
     command_expiry_sec: 0.35
     refresh_sec: 0.10
+    # Reference input scales for approximate /cmd_vel mixing, NOT calibration
+    linear_reference_mps: 0.5
+    angular_reference_radps: 1.0
